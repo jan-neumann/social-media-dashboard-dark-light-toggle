@@ -4,7 +4,15 @@
     border: none;
 
     &__wrapper {
-        
+
+    }
+
+    input[type="radio"] {
+
+    }
+
+    &__background {
+
     }
 
     &__button {
@@ -12,5 +20,9 @@
         height: rem(16);
         border-radius: 50%;
         background-color: var(--toggle);
+    }
+
+    label {
+        
     }
 }
