@@ -4,10 +4,13 @@
     display: grid;
     grid-template-columns: 1fr rem(60) 1fr;
     grid-template-rows: repeat(2, 1fr);
-    gap: rem(12);
+    gap: rem(8);
     border: none;
+    margin: 0;
     
     label {
+        font-size: rem(14);
+      
         &[for="dark"] {
             grid-column: 1 / 2;
             justify-self: end;
@@ -16,6 +19,7 @@
             grid-column: 1 / end;
             grid-row: 2 / 3;
             justify-self: center;
+            align-self: start;
         }
         &[for="light"] {
             grid-column: 3 / 4;
@@ -34,6 +38,10 @@
         opacity: 0;
         width: rem(20);
         height: rem(20);
+
+        &:focus ~ .toggle__button {
+            border: rem(2) solid white;
+        }
     }
 
     &__background {
